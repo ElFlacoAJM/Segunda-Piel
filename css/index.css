@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100;0,400;1,400;1,500&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: "acme", sans-serif;
+    background-image: url(../img/fondo2.jpg);
+    background-attachment: fixed;
+}
+.imagenf{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+}
+.imagen__frente{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+    flex: 1 1 40%;
+    height: 300px;
+    width: 300px;
+    margin: 25px;
+    
+}
+ul{
+    list-style-type: none;
+}
+a {
+    font-family: "acme", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+img {
+    width: 100%;
+}
+a:hover{
+    background-color: antiquewhite;
+}
+.imagen__item {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin-right: auto;
+}
+header{
+    display: flex;
+    background-image: url(../img/fondo.jpg);
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-bottom: 2px solid black;
+}
+.imagen{
+    max-width: 120px;
+}
+.menu{
+      display: flex;
+      gap: 2rem;    
+}
+.menu__link {
+    font-size: 1.5em;
+}
+
+section .gallery{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery__img {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    flex: 1 1 30%;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+/* main */
+
+.imagenf {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.gallery .gallery__img:nth-of-type(1) {
+    grid-column: 1 / 7;
+}
+.gallery .gallery__img:nth-of-type(2) {
+    grid-column: 7 / 13;
+}
+.gallery .gallery__img:nth-of-type(3) {
+    grid-column: 4 / 10;
+    grid-row: 2;
+}
+.gallery .gallery__img:nth-of-type(4) {
+    grid-column: 1 / 7;
+    grid-row: 3;   
+}
+.gallery .gallery__img:nth-of-type(5) {
+    grid-column: 7 / 13;
+    grid-row: 3;    
+}
+ 
+@media screen and (max-width: 960px) {
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(4, auto);
+        gap: 1rem;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    width: 100%;
+
+    font-size: 32;
+    
+}
+.menu__fondo {
+    display: flex;
+    list-style: none; 
+}
+
+.fondo__copi {
+    display: flex;
+    margin: 25px;
+    height: 25px;
+    color: rgb(241, 244, 247);
+    
+}
+.fondo__copi1{
+    display: flex;
+    margin: 15px;
+    height: 35px;
+    width: 35px; 
+}
+/* Main*/
+
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    flex: 1 1 clamp(200px, 10%, 400px);
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+.box__info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+.imagen__canguro{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    left: 100px;
+}
+.texto__canguro {
+    font-size: 20px;
+    font-weight: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    bottom: 300px;
+}
+.imagen__mel{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    left: 100px;
+}
+.texto__mel{
+    font-size: 20px;
+    font-weight: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    bottom: 300px;
+}
+.seccion__contacto{
+    font-size: 30px;
+    position: relative;
+    margin: 200px 200px;
+}
+
+
+
