@@ -138,6 +138,7 @@ footer {
     font-size: 32;
     
 }
+.fondo {display: flex;}
 .menu__fondo {
     display: flex;
     list-style: none; 
