@@ -4,6 +4,9 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+/* comienzo de body*/
+
 body {
     font-family: "acme", sans-serif;
     background-image: url(../img/fondo2.jpg);
@@ -45,6 +48,11 @@ a:hover{
     display: block;
     margin-right: auto;
 }
+
+/* fin body*/
+
+/* principio de header*/
+
 header{
     display: flex;
     background-image: url(../img/fondo.jpg);
@@ -52,17 +60,41 @@ header{
     justify-content: space-around;
     padding: 1rem 0;
     border-bottom: 2px solid black;
+    position: relative;
 }
+.hamburger, #hamburger{
+    display: none;
+}
+
+#hamburger {
+    position: absolute;
+    top: 102px;
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .imagen{
     max-width: 120px;
 }
-.menu{
+nav .menu{
       display: flex;
-      gap: 2rem;    
+      gap: var(--spacing-small);    
 }
 .menu__link {
-    font-size: 1.5em;
+    font-size: var(--text-medium);
+    padding: var(--spacing-xsmall) 1.2rem;
+    border: 2px solid white;
+    transition: all 1s;
 }
+
+/* section*/
 
 section .gallery{
     display: flex;
@@ -79,6 +111,51 @@ section .gallery{
     flex: 1 1 30%;
     border-radius: 20px;
     box-shadow: 5px 8px 12px black;
+}
+.imagen__canguro{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    left: 100px;
+}
+
+.texto__canguro {
+    font-size: 20px;
+    font-weight: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    bottom: 300px;
+}
+
+.imagen__mel{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    left: 100px;
+}
+
+.texto__mel{
+    font-size: 20px;
+    font-weight: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    bottom: 300px;
 }
 
 /* main */
@@ -123,11 +200,26 @@ section .gallery{
         gap: 2rem;
     }
 
+    .hamburger, #hamburger {
+        display: block;
+    }
+
+    #hamburger:checked ~ .navegacion{
+        display: block;
+    }
+
+    .navegacion {
+        display: none;
+    }
     .gallery {
         grid-template-rows: repeat(4, auto);
         gap: 1rem;
     }
 }
+
+/* fin de header*/
+
+/* principio de footer */
 
 footer {
     display: flex;
@@ -138,7 +230,10 @@ footer {
     font-size: 32;
     
 }
-.fondo {display: flex;}
+
+.fondo {display: flex;
+}
+
 .menu__fondo {
     display: flex;
     list-style: none; 
@@ -156,6 +251,23 @@ footer {
     margin: 15px;
     height: 35px;
     width: 35px; 
+}
+/* bootstrap */
+.row{
+    margin: 15px;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    text-align: center;
+    margin: auto;
+}
+.card-title{
+    font-size: 40px;
+}
+.btn {
+    font-size: 25px;
+    color: chocolate;
 }
 /* Main*/
 
@@ -188,53 +300,13 @@ footer {
     padding: 2rem;
     gap: 1rem;
 }
-.imagen__canguro{
-    width: 400px;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-    margin: 200px auto;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
-    left: 100px;
-}
-.texto__canguro {
-    font-size: 20px;
-    font-weight: 300px;
-    display: inline-block;
-    position: relative;
-    margin: 10px 10px;
-    width: 300px;
-    height: 300px;
-    left: 100px;
-    bottom: 300px;
-}
-.imagen__mel{
-    width: 400px;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-    margin: 200px auto;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
-    left: 100px;
-}
-.texto__mel{
-    font-size: 20px;
-    font-weight: 300px;
-    display: inline-block;
-    position: relative;
-    margin: 10px 10px;
-    width: 300px;
-    height: 300px;
-    left: 100px;
-    bottom: 300px;
-}
+
 .seccion__contacto{
     font-size: 30px;
     position: relative;
     margin: 200px 200px;
 }
+
 
 
 

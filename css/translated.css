@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  background-image: url(../img/fondo.jpg);
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-bottom: 2px solid black;
+  position: relative; }
+  header .hamburger, header #hamburger {
+    display: none; }
+  header #hamburger {
+    position: absolute;
+    top: 102px;
+    width: 32px;
+    height: 32px;
+    opacity: 0; }
+  header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  header .imagen {
+    max-width: 120px; }
+  header nav .menu {
+    display: flex;
+    gap: var(--spacing-small); }
+  header .menu__link {
+    font-size: var(--text-medium);
+    padding: var(--spacing-xsmall) 102rem;
+    border: 2px solid white;
+    transition: all 1s; }
+
+.main .pepe {
+  font-size: 20px; }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .cards .box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 clamp(200px, 10%, 400px);
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black; }
+    .cards .box .box__info {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      gap: 1rem; }
