@@ -1,0 +1,43 @@
+
+header{
+    display: flex;
+    background-image: url(../img/fondo.jpg);
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-bottom: 2px solid black;
+    position: relative;
+
+    .hamburger, #hamburger{
+    display: none;
+    }   
+
+    #hamburger {
+    position: absolute;
+    top: 102px;
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .imagen{
+    max-width: 120px;
+    }
+    nav .menu{
+      display: flex;
+      gap: $spacing-small;    
+    }
+    .menu__link {
+    font-size: $text_medium;
+    padding: $spacing-xsmall 102rem;
+    border: 2px solid white;
+    transition: all 1s;
+    }
+
+}

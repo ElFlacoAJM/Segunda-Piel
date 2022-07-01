@@ -1,14 +1,16 @@
 .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
+    @include flex(row, center, stretch, $spacing-xsmall);
+   // display: flex;
+   //flex-direction: row;
+   // gap: $spacing-xsmall;
+   // justify-content: center;
     flex-wrap: wrap;
 
     .box {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; 
+        @include flex(column, flex-start, flex-start, map-get($spacing, $spacing-xsmall));
+       // display: flex;
+       // flex-direction: column;
+       // gap: $spacing-xsmall; 
         flex: 1 1 clamp(200px, 10%, 400px);
         border-radius: 20px;
         box-shadow: 5px 8px 12px black;
@@ -16,16 +18,44 @@
         .box__info {
             display: flex;
             flex-direction: column;
-            padding: 2rem;
-            gap: 1rem;
-
-            .box_titulo{
-
+            padding: $spacing-small;
+            gap: $spacing-xsmall;  
+        }
+        .btn {
+            width: 150px;
+            padding: 10px 12px;
+            font-size: 18px;
+            margin: 0 auto;
+            border: none;
+            margin: 5px;
+        }
+        .btn--aceptar {
+            background-color: rgb(31, 172, 31);
+            &:hover {
+                background-color: rgb(31, 172, 31, 0.669);
             }
 
-            .box_tex{
-                
+        .btn--cancelar {
+                background-color: rgb(233, 37, 37);
+                &:hover {
+                    background-color: rgb(233, 37, 37, 0.78);
+                }
+       }
+        $carteras: (
+            sobre2: "sobre"
+            bruja2: "bruja"
+            nicole2: "nicole"
+            julia2: "julia"
+        );
+
+        @each $key, $val in $carteras {
+            &__img--#{$key} {
+                height: 400px;
+                background-size: cover;
+                background-image: url("../img/#{$val}.jpg");
             }
         }
     }
- }
+            
+    }
+}

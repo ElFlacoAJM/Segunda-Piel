@@ -1,0 +1,22 @@
+.imagen__canguro{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    left: 100px;
+}
+
+.texto__canguro {
+    font-size: 20px;
+    font-weight: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    bottom: 300px;
+}

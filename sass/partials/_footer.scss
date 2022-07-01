@@ -1,0 +1,87 @@
+footer {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    width: 100%;
+
+    font-size: 32;
+    
+}
+
+.fondo {display: flex;
+}
+
+.menu__fondo {
+    display: flex;
+    list-style: none; 
+}
+
+.fondo__copi {
+    display: flex;
+    margin: 25px;
+    height: 25px;
+    color: rgb(241, 244, 247);
+    
+}
+.fondo__copi1{
+    display: flex;
+    margin: 15px;
+    height: 35px;
+    width: 35px; 
+}
+/* bootstrap */
+.row{
+    margin: 15px;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    text-align: center;
+    margin: auto;
+}
+.card-title{
+    font-size: 40px;
+}
+.btn {
+    font-size: 25px;
+    color: chocolate;
+}
+/* Main*/
+
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: $spacing-small;
+}
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-xsmall;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xsmall; 
+    flex: 1 1 clamp(200px, 10%, 400px);
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+.box__info {
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-small;
+    gap: $spacing-xsmall;
+}
+
+.seccion__contacto{
+    font-size: 30px;
+    position: relative;
+    margin: 200px 200px;
+}
+
+

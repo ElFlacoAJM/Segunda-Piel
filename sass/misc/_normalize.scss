@@ -1,0 +1,35 @@
+$theme: "dark";
+
+/* Normalize */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+/*body {
+    font-family: "acme", sans-serif;
+    @if $theme == "dark" {
+            background-color: $alternative;
+    } @else {
+        background-color: $base;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    font-family: "acme", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+img {
+    width: 100%;
+}*/
