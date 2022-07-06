@@ -1,4 +1,4 @@
-$theme: "dark";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100;0,400;1,400;1,500&display=swap');
 
 /* Normalize */
 * {
@@ -11,17 +11,12 @@ html{
     font-size: 62.5%;
 }
 
-
-
-/*body {
+body {
     font-family: "acme", sans-serif;
-    @if $theme == "dark" {
-            background-color: $alternative;
-    } @else {
-        background-color: $base;
-    }
+    background-image: url(../img/fondo2.jpg);
+    background-attachment: fixed;   
 }
-
+    
 ul {
     list-style-type: none;
 }
@@ -32,4 +27,4 @@ a {
 }
 img {
     width: 100%;
-}*/
+}
